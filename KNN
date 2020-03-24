@@ -27,6 +27,7 @@ knn = KNeighborsClassifier(n_neighbors=1)
 knn.fit(X_train,y_train)
 pred = knn.predict(X_test)
 
+
 #Predictions and Evaluations
 from sklearn.metrics import classification_report,confusion_matrix
 print(confusion_matrix(y_test,pred))
